@@ -10,5 +10,5 @@ Installation
 
     $ cd APP_ROOT/public/plugin/
     $ git clone git@github.com:mururu/lokka-multi_login.git
-    $ bundle exec rake db:setup
     $ bundle install
+    $ bundle exec rake db:setup
