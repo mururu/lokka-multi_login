@@ -1,0 +1,14 @@
+%h2 MultiLogin
+- providers.each do |provider|
+  = haml :'plugin/lokka-multi_login/views/provider', :layout => false, :locals => { :provider => provider }
+%br
+%br
+%h3= t('multi_login.filter_title')
+%form{:action => '/admin/plugins/multi_login/permission', :method => 'post'}
+  %input{:type => 'hidden', :name => '_method', :value => 'put'}
+  %ul
+    - filterable_paths.each do |resource, value|
+      %li
+        %label{:for => resource} #{resource}
+        %input{:type => 'checkbox', :name => resource, :value => "1", :checked => value}
+  %input{:type => 'submit', :value => t('multi_login.update')}

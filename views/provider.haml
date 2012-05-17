@@ -1,0 +1,20 @@
+%h3= provider.camelcase
+- if eval("#{provider}_on?")
+  = link_to t('multi_login.acceptable_users_list'), "/admin/plugins/multi_login/#{provider}/acceptable_users"
+  %br
+  = link_to t("multi_login.#{provider}.disable"), "/admin/plugins/multi_login/#{provider}", :confirm => t('are_you_sure'), :method => :delete
+  %br
+- else
+  %p= t("multi_login.#{provider}.message")
+  %form{:action => "/admin/plugins/multi_login/#{provider}", :method => 'post'}
+    %input{:type => 'hidden', :name => '_method', :value => 'put'}
+    .field
+      %label{:for => "#{provider}_key"}= t("multi_login.#{provider}.key")
+      %br
+      %input{:type => 'text', :id => "#{provider}_key", :name => "#{provider}_key", :value => Option.send(:"#{provider}_key")}
+    .field
+      %label{:for => "#{provider}_secret"}= t("multi_login.#{provider}.secret")
+      %br
+      %input{:type => 'text', :id => "#{provider}_secret", :name => "#{provider}_secret", :value => Option.send(:"#{provider}_secret")}
+    .field
+      %input{:type => 'submit', :value => t('edit')}

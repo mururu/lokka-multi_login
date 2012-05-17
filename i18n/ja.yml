@@ -1,0 +1,39 @@
+ja:
+  multi_login:
+    update: 更新
+    add: 追加
+    provider_list: プロバイダー一覧
+    filter_title: フィルター（チェックしたページはパスワード認証でないユーザは使用できなくなります）
+    filter_updated: フィルターを更新しました
+    acceptable_users_list: ログイン許可ユーザ一覧
+    not_allowed_access: アクセスが許可されていません
+    facebook:
+      message: Facebookログインを有効にするにはAppIDとアプリの秘訣を登録してください
+      disable: Facebookログインを無効にする
+      enabled: Facebookログインを有効にしました
+      disabled: Facebookログインを無効にしました
+      key: AppID
+      secret: アプリの秘訣
+      login: Facebookアカウントでログインする
+      login_failed: Facebookログインに失敗しました
+      not_allowed_login: このFacebookアカウントは許可されていません
+      add: Facebookアカウントをひもづける
+      add_failed: Facebookアカウントのひもづけに失敗しました。
+      added: Facebookアカウントをひもづけました
+      acceptable_users: Facebookログイン許可ユーザ一覧
+      id: FacebookID
+    twitter:
+      message: Twitterログインを有効にするにはConsumerKeyとConsumerSecretを登録してください
+      disable: Twitterログインを無効にする
+      enabled: Twitterログインを有効にしました
+      disabled: Twitterログインを無効にしました
+      key: ConsumerKey
+      secret: ConsumerSecret
+      login: Twitterアカウントでログインする
+      login_failed: Twitterアカウントでのログインに失敗しました
+      not_allowed_login: このTwitterアカウントは許可されていません
+      add: Twitterアカウントをひもづける
+      add_failed: Twitterアカウントのひもづけに失敗しました。
+      added: Twitterアカウントをひもづけました
+      acceptable_users: Twitterログイン許可ユーザ一覧
+      id: TwitterScreenName

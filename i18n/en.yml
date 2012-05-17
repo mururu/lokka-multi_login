@@ -1,0 +1,39 @@
+ja:
+  multi_login:
+    update: update
+    add: add
+    provider_list: Listing Providers
+    filter_title: Filter
+    filter_updated: Filter was updated
+    acceptable_users_list: Listing Acceptable Users
+    not_allowed_access: Not allowed access
+    facebook:
+      message: Register your AppID and AppSecret
+      disable: Disable Facebook
+      enabled: Enabled Facebook
+      disabled: Disabled Facebook
+      key: AppID
+      secret: AppSecret
+      login: Login with Facebook
+      login_failed: Failed to login with Facebook
+      not_allowed_login: This Facebook accout is not allowed to login
+      add: Add Facebook Account
+      add_failed: Failed to add Facebook
+      added: Added Facebook to your accout
+      acceptable_users: Listing Acceptable Facebook Users
+      id: FacebookID
+    twitter:
+      message: Registar your ConsumerKey and ConsumerSecret
+      disable: Disable Twitter
+      enabled: Enabled Twitter
+      disabled: Disabled Twitter
+      key: ConsumerKey
+      secret: ConsumerSecret
+      login: Login with Twitter
+      login_failed: Failed to login with Twitter
+      not_allowed_login: This Twitter account is not allowed to login
+      add: Add Facebook Account
+      add_failed: Failed to add Twitter
+      added: Added Twitter to yout account
+      acceptable_users: Listing Acceptable Facebook Users
+      id: TwitterScreenName
